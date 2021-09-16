@@ -1,0 +1,124 @@
+:root{
+    --DarkCyan: hsl(185, 75%, 39%);
+    --VeryDarkDsaturatedBlue: hsl(229, 23%, 23%);
+    --DarkGrayishBlue: hsl(227, 10%, 46%);
+    --DarkGray: hsl(0, 0%, 59%);
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.5rem;
+    font-family: 'Kumbh Sans', sans-serif;
+
+    background-color: var(--DarkCyan);
+    background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    
+    width: 40rem;
+    height: 40rem;
+
+    border-radius: 1rem;
+    background-color: white;
+}
+
+.card-background{
+    width: 100%;
+    height: 40%;
+    margin-top: -3rem;
+
+    background-image: url(/images/bg-pattern-card.svg);
+}
+
+.card-img{    
+    margin-top: -7rem;
+
+    border-radius: 50%;
+    border: 0.7rem solid white;
+}
+
+.card-img img{
+    border-radius: 50%;
+}
+
+.card-stats{
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 40rem;  
+    border-top: 0.2rem solid rgb(224, 224, 224);
+}
+
+.card-title, .card-paragraph{
+    margin: 0rem;
+    padding: 0rem;
+    text-align: center;
+}
+
+.card-paragraph{
+    line-height: 4rem;
+    color: var(--DarkGray);
+}
+
+.card-title span{
+    margin-left: 0.5rem;
+    color: var(--DarkGray);
+}
+
+.card-stats .card-title{
+    margin-top: 2rem;
+    margin-bottom: -1rem;
+}
+
+.card-stats .card-paragraph{
+    font-size: 1.2rem;
+}
+
+@media (max-width: 368px) {
+    .container{
+        min-height: 95vh;
+    }
+     .card{
+        width: 32rem;
+        height: 40rem;
+     }
+
+     .card-background{
+        height: 35%;
+    }
+    
+    .card-img{    
+        margin-top: -8rem;
+    }
+
+    .card-stats{
+        width: 32rem;  
+        justify-content: space-evenly;
+    }
+}
+
+
+

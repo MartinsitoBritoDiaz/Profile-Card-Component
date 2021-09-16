@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preload" href="style.css" as="style">
   <link rel="stylesheet" href="style.css">
@@ -11,18 +13,44 @@
 
 </head>
 <body>
-  Victor Crest
-  26
-  London
+  <div class="container">
+    
+    <article class="card">
 
-  80K
-  Followers
+      <div class="card-background"></div>
 
-  803K
-  Likes
+      <div class="card-img">
+          <img src="/images/image-victor.jpg" alt="">
+      </div>
+      
+      <div class="card-info">
+        <h3 class="card-title">
+          Victor Crest
+          <span>26</span>
+        </h3>
+        <p class="card-paragraph">London</p>
+      </div>
+    
+      <div class="card-stats">
+        <div>
+          <h3 class="card-title">80K</h3>
+          <p class="card-paragraph">Followers</p>
+        </div>
 
-  1.4K
-  Photos
+        <div>
+          <h3 class="card-title">803K</h3>
+          <p class="card-paragraph">Likes</p>
+        </div>
+    
+        <div>
+          <h3 class="card-title">1.4K</h3>
+          <p class="card-paragraph">Photos</p>
+        </div>
+        
+      </div>
+    </article>
+  
+  </div>
 
 </body>
 </html>
